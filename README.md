@@ -1,11 +1,12 @@
 
 # CDK Starter Template
 
-An AWS CDK starter template written in TypeScript, with Cognito, Lambda, API Gateway, and DynamoDB preconfigured for faster project bootstrapping. Includes a GitHub-based CI/CD pipeline with separate `dev` and `prod` environments.
+An AWS CDK starter template written in TypeScript, with Cognito, Lambda, API Gateway, and DynamoDB preconfigured for faster project bootstrapping. 
+Includes a GitHub-based CI/CD pipeline with separate `dev` and `prod` environments, along with simple authentication endpoints for signup and signin.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-## Features
+## AWS Resources
 
 - AWS CDK pipeline with separate dev and prod environments.
 - GitHub CI/CD using AWS CodePipeline
@@ -15,6 +16,12 @@ An AWS CDK starter template written in TypeScript, with Cognito, Lambda, API Gat
 - DynamoDB for persistence
 - SQS for messaging service
 
+## Features
+
+- Lambdas written in python with [powertools-lambda-python](https://github.com/aws-powertools/powertools-lambda-python)
+- Auth Lambda with `sign-up`, `confirm-sign-up` and `sign-in` endpoints.
+- User Lambda with `get-user-details` endpoint.
+- Email worker Lambda which is triggered from `SQS`.
 
 
 ## Installation
