@@ -47,8 +47,8 @@ Install packages
 3. Generate a GitHub Personal Access Token (PAT) from GitHub settings and store it securely in AWS Secrets Manager as plaintext.
     - This token will be used by the CDK pipeline to access the GitHub repository.
 4. Update `cdk.json` with:
-    - The ARN of the secret stored in AWS Secrets Manager (under `context.github_token_secret_arn`)
-    - The GitHub repository name (under `context.github_repo_name`)
+    - The complete ARN of the secret stored in AWS Secrets Manager (under `context.github_token_secret_arn`). Format `arn:aws:secretsmanager:us-east-1:123456789012:secret:GITHUB_TOKEN`
+    - The GitHub repository name (under `context.github_repo_name`). Format `rohankshah/cdk-starter-template`
 5. Bootstrap your AWS account by running `cdk bootstrap`.
 6. Synthesize the CloudFormation templates using `cdk synth`.
 7. Deploy the stack by running `cdk deploy`.

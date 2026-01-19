@@ -77,7 +77,7 @@
     "@aws-cdk/aws-lambda-nodejs:sdkV3ExcludeSmithyPackages": true,
     "@aws-cdk/aws-stepfunctions-tasks:fixRunEcsTaskPolicy": true,
 
-    "github_token_secret_arn": "",
-    "github_repo_name": ""
+    "github_token_secret_arn": "ADD_YOUR_GITHUB_TOKEN_SECRET_ARN_HERE", 
+    "github_repo_name": "OWNER/REPOSITORY_NAME"
   }
 }
