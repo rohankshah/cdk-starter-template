@@ -33,7 +33,6 @@ export class Storage extends Construct {
         });
 
         this.bucket = new s3.Bucket(this, "Bucket", {
-            bucketName: `${name}-${environment}-bucket`,
             cors: [{
                 allowedOrigins: ['*'],
                 allowedMethods: [s3.HttpMethods.GET, s3.HttpMethods.PUT, s3.HttpMethods.POST],
